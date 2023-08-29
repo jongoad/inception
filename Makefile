@@ -29,13 +29,13 @@ clean:
 	sudo docker system prune -f
 	sudo docker volume prune -f
 
-# attach-wp:
-# 	sudo docker exec -it wordpress sh
+attach-wp:
+	sudo docker exec -it wordpress sh
 
-# attach-maria:
-# 	sudo docker exec -it mariadb sh
+attach-maria:
+	sudo docker exec -it mariadb sh
 
-# attach-nginx:
-# 	sudo docker exec -it nginx sh
+attach-nginx:
+	sudo docker exec -it nginx sh
 
 re: clean compose
